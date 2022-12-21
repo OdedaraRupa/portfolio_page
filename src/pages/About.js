@@ -8,33 +8,33 @@ export default function About() {
 
   return (
 
-    <div className="col-md-10 ">
+    <div className="col-lg-10 col-md-9 ">
       <div className='page-container' >
         <Breadcrumb  ></Breadcrumb>
 
         <div className='row justify-content-center'>
-          <div className='col-md-5'>
+          <div className='col-lg-5 col-md-12'>
             <div className="card text-center about-card" >
               <div className='card-img-cover'>
 
               </div>
               <div className="card-body">
                 <h5 className="card-title"><b>Rupa Odedara</b></h5>
-                <div className="text-muted mb-2">Web Devloper</div>
-                <p className="card-text text-muted mb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div className="card-subtitle mb-2">Web Devloper</div>
+                <p className="card-text text-muted mb-2">Creative <b>Web Developer</b> with over 3 years of experience providing a high impact web solution for diverse industry organizations. Eager to get a difficult position in a prestigious company and which will expand my learning and develop my developer skills. I'm an expert in JAMstack.</p>
                 <Link to="/contact" className="button button-primary">Contact Me</Link>
 
 
               </div>
             </div>
           </div>
-          <div className='col-md-7'>
+          <div className='col-lg-7 col-md-12'>
             <div className='row justify-content-center'>
               <div className='col-md-6 mt-4'>
                 <div className="card text-center about-card" >
                   <div className="card-body">
                     <span className='text-muted'></span>
-                    <div className="mb-2 text-number">20+</div>
+                    <div className="mb-2 text-number">25+</div>
                     <div className="card-title" style={{ display: "flex", justifyContent: "space-between", fontSize: "20px" }}> Projects
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                         viewBox="0 0 20 20" fill="none" stroke="currentColor"

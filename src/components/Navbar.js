@@ -20,7 +20,7 @@ export default function Navbar() {
         </div>
       </div>
       {/* NavBar  */}
-      <div className="col-md-2  wrapper ">
+      <div className="col-lg-2 col-md-3  wrapper ">
         <div className="nav-bar">
           <div className="nav-container">
             <div className="nav-content d-flex">

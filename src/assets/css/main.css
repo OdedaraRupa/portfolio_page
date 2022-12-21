@@ -25,6 +25,7 @@ a:hover {
 ul,
 ol {
   list-style: none;
+  
 }
 
 h1,
@@ -60,7 +61,7 @@ a {
 /* General */
 .button {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; 
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 10px;
@@ -75,6 +76,11 @@ a {
 
 .button.button-primary {
   background-color: #21aff0;
+  transition: all 0.5s ease;
+}
+.button.button-primary:hover{
+    background:#1274a1;
+    color: #fff;
 }
 
 .button.btn-bg {
@@ -100,6 +106,7 @@ a {
   color: #fff;
 
 }
+
 
 .hero-title {
   font-family: 'Montserrat', sans-serif;
@@ -498,6 +505,32 @@ main {
   border: none;
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%)
 }
+.about-card  .card-subtitle{
+  color: #1ea8e7;
+  font-weight: 700;
+  position: relative;
+  
+}
+
+.about-card  .card-subtitle::before{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #1ea8e7;
+  left: calc(100% - 70%);
+  top: 50%;
+
+}
+.about-card  .card-subtitle::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #1ea8e7;
+  right: calc(100% - 72%);
+  top: 50%;
+}
 
 .card-img-cover {
   width: 100px;
@@ -703,6 +736,160 @@ main {
   transform: translate(-50%, -50%);
   font-size: 20px;
 }
+/* Portfolio Page */
+.portfolio-wrapper h5{
+  font-weight: 700;
+}
+.portfolio-wrapper .card-subtitle{
+  font-weight: 700;
+  color: #1ea8e7;
+}
+.portfolio-wrapper .subtitle{
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10PX;
+  padding: 5PX 10PX;
+  border-radius: 20PX;
+  border: 1PX solid #1ea8e7;
+  
+}
+.portfolio-wrapper .card-link{
+  color: #fff;
+  background-color: #1ea8e7;
+  padding: 7px 15px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+.portfolio-wrapper .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-height: X;        /* fallback */
+  max-height: X*N;       /* fallback */
+} 
+.portfolio-wrapper .nav-item .nav-link{
+  text-decoration: none;
+  font-weight: 700;
+  color: #1ea8e7;
+}
+/* Contact Page */
+.contact-wrapper .contact-title h4{
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  margin-top: 15px;
+}
+.contact-wrapper .contact-title h4::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 90%;
+  height: 2px;
+  background-color: #4e4e4e;
+  top: 50%;
+  left: 100%;
+  transform: translate(-80%,-50%);
+
+}
+.contact-wrapper .contact-list{
+    display: flex;
+    flex-direction: column;
+}
+.contact-wrapper .contact-list .contact-inner{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+.contact-wrapper .contact-list .contact-inner .icon{
+  background-color: #1ea8e7;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 25px;
+}
+.contact-wrapper .contact-list .contact-inner .icon i{
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.contact-wrapper .contact-list .contact-inner p{
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.contact-wrapper a{
+  display: block;
+  color: #4e4e4e ;
+}
+.social-detail a{
+  width: 70px;
+  height: 70px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+}
+.social-detail a i{
+  font-size: 26px;
+  line-height: 70px;
+  transition: 0.2s linear;
+    
+}
+.social-detail a:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.social-detail a::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-color: #21aff0;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+
+}
+.social-detail a:hover::before{
+  animation: hoverAnimation 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes  hoverAnimation{
+  0%{
+    top: -100%;
+    left: 90%;
+  }
+  50%{
+    top: 10%;
+    left: -30%;
+  }
+  100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .nav-bar{
+      width: 25%;
+    }
+
+}
 @media only screen and (max-width: 767px) {
   .nav-bar {
     display: none;
@@ -728,4 +915,33 @@ main {
   .bg-hero {
     height: unset;
   }
+  .page-container {
+    margin: 15px;
+  
+  }
+  /* portfolio */
+  .portfolio-wrapper .page-container{
+    margin: 15px 0;
+  }
+  /* Resume Page */
+  .outer-circle{
+    margin: 0 auto;
+  }
+  .resume-items {
+    margin-bottom: 20px;
+  }
+  /* contact */
+  .contact-wrapper .hero-wrapper{
+    padding: 0;
+  }
+  .contact-list{
+    padding: 40px 15px;
+  }
+  .social-detail{
+    padding: 40px 15px;
+  }    
+  .social-detail a{
+    margin: 10px auto;
+  }
+
 }
