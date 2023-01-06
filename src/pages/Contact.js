@@ -11,13 +11,13 @@ export default function About() {
     {
       icon: "fa fa-phone",
       title: "Phone",
-      content: "+919712813889",
-      link: "tel:+919712813889"
+      content: "+1 778 903 8140",
+      link: "tel:+17789038140"
     },
     {
       icon: "fa fa-address-book",
       title: "Address",
-      content: "ABC Street Canada",
+      content: "5055 Imperial ST BC Canada",
       link: "#"
     }
   ]
