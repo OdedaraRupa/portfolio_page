@@ -4,6 +4,8 @@ import {
 } from "react-router-dom";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
   return (
     <>
       {/* Mobile Navbar  */}
@@ -13,15 +15,16 @@ export default function Navbar() {
             <h3>RO</h3>
           </div>
           <div className="col-2">
-            <button className="nav-toggler" type="button" >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="cs-icon menu "><path d="M2 3 18 3M2 10 18 10M2 17 18 17"></path></svg>
+            <button className="nav-toggler" type="button" onClick={toggle} >
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="20" height="20"  className= {`cs-icon menu ${isOpen === true ? 'btn-open' : 'btn-close'}`} ><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className= {`cs-icon menu ${isOpen === true ? 'btn-close' : 'btn-open'}`}><path d="M2 3 18 3M2 10 18 10M2 17 18 17"></path></svg>
             </button>
           </div>
         </div>
       </div>
       {/* NavBar  */}
       <div className="col-lg-2 col-md-3  wrapper ">
-        <div className="nav-bar">
+        <div className= {`nav-bar ${isOpen ? 'open-nav' : ''}`} >
           <div className="nav-container">
             <div className="nav-content d-flex">
               {/* <div className="logo"><h1><b>RO</b></h1></div>  */}
