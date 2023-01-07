@@ -518,7 +518,7 @@ main {
   width: 10px;
   height: 2px;
   background-color: #1ea8e7;
-  left: calc(100% - 70%);
+  left: calc(100% - 75%);
   top: 50%;
 
 }
@@ -528,7 +528,7 @@ main {
   width: 10px;
   height: 2px;
   background-color: #1ea8e7;
-  right: calc(100% - 72%);
+  right: calc(100% - 76%);
   top: 50%;
 }
 
