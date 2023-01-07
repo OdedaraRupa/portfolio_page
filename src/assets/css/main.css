@@ -900,6 +900,12 @@ main {
   .open-nav{
 	  width:70%;
   }
+  .btn-open{
+	display: block;
+   }
+   .btn-close{
+	  display:none;
+   }
 
   .nav-mobile {
     display: block;
