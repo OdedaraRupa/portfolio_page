@@ -17,7 +17,7 @@ export default function About() {
     {
       icon: "fa fa-address-book",
       title: "Address",
-      content: "5055 Imperial ST BC Canada",
+      content: "107,5055 Imperial ST BC Canada",
       link: "#"
     }
   ]
