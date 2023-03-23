@@ -38,7 +38,9 @@ h6 {
   line-height: 1.25;
   font-family: "Montserrat", sans-serif;
 }
-
+img{
+  width: 100%;
+}
 .nav,
 a {
   color: #fff;
@@ -881,6 +883,19 @@ main {
     top: -10%;
     left: -10%;
   }
+}
+/* academic */
+.course-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.course-image img{
+  max-width: 70%;
+
+}
+.course-name{
+  list-style: disc;
 }
 @media only screen 
   and (min-device-width: 768px) 
