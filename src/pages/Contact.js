@@ -7,19 +7,8 @@ export default function About() {
       title: "Email",
       content: "odedararupa35@gmail.com",
       link: "mailto:odedararupa35@gmail.com"
-    },
-    {
-      icon: "fa fa-phone",
-      title: "Phone",
-      content: "+1 778 903 8140",
-      link: "tel:+17789038140"
-    },
-    {
-      icon: "fa fa-address-book",
-      title: "Address",
-      content: "107,5055 Imperial ST BC Canada",
-      link: "#"
     }
+  
   ]
   return (
     <div className="col-lg-10 col-md-9 ">

@@ -9,7 +9,6 @@ import Navbar from "./components/Navbar";
 import Main from "./pages/Main";
 import About from './pages/About';
 import Contact from "./pages/Contact";
-import Academic from "./pages/Academic";
 import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 function App() {
@@ -23,7 +22,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Main heading="Enter the text to analyze below "  ></Main>} />
               <Route path="/about" element={<About   ></About>} />
-              <Route path="/academic" element={<Academic   ></Academic>}> </Route>
               <Route path="/contact" element={<Contact  ></Contact>} />
               <Route path="/resume" element={<Resume  ></Resume>} />
               <Route path="/portfolio" element={<Portfolio  ></Portfolio>} />

@@ -23,8 +23,8 @@ export default function Main() {
                       <div className="shape shape-box-2"></div>
                       <span>Hello, I'm</span>
                       <h1 className='hero-title'>Rupa Odedara</h1>
-                     
-                      
+
+
                       <p>Engineer Mind with problem solving skills and keen interest in Web Development since 2013.Currently Pursuing a career in Cyber Security to utilize my knowledge and skills in protecting valuable information and ensuring the confidentiality, integrity, and availability of computer systems</p>
                       {/* <a href="" className="button btn-bg" ><span>About Me	</span> </a> */}
                     </div>
